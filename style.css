@@ -432,3 +432,80 @@ footer p{
     }
 
 }
+
+.menu-line{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    margin:8px 0;
+    color:var(--gray);
+}
+
+.menu-line span:last-child{
+    color:var(--white);
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.card h3{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-multiline{
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
+}
+
+.menu-multiline small{
+    color:var(--gray);
+    font-weight:500;
+    font-size:0.9em;
+}
+
+.menu-line{
+    align-items:flex-end;
+}
+
+/* ===== BOISSONS (3 colonnes) ===== */
+
+.menu-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* nom du produit */
+.menu-line .name {
+    flex: 1;
+}
+
+/* ===== ALIGNEMENT BOISSONS (version aérée) ===== */
+
+.menu-line{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+/* nom */
+.menu-line .name{
+    flex:1;
+}
+
+/* quantité (un peu d’espace avec le prix) */
+.menu-line .qty{
+    color:var(--gray);
+    white-space:nowrap;
+    margin-left:auto;
+    margin-right:10px; /* 👈 espace entre qty et prix */
+}
+
+/* prix */
+.menu-line .price{
+    color:var(--white);
+    font-weight:700;
+    white-space:nowrap;
+}
