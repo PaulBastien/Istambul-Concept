@@ -66,6 +66,7 @@
         <div class="card" style="margin-bottom:30px;">
             <h3>ℹ️ Informations utiles</h3><br>
             <p>
+                • Toutes nos viandes sont certifiées Halal 🥩<br><br>
                 • Tous les sandwichs, galettes et assiettes sont servis avec sauce et légumes au choix.<br><br>
                 • Les menus sandwichs, galettes, burgers et chicken comprennent frites + boisson 33 cl.<br><br>
                 • Les menus assiettes comprennent une boisson 33 cl.<br><br>
@@ -322,7 +323,7 @@
             <div><span>Mercredi</span><span>11h00–14h30 • 18h00–22h00</span></div>
             <div><span>Jeudi</span><span>11h00–14h30 • 18h00–22h00</span></div>
             <div><span>Vendredi</span><span>11h00–14h30 • 18h00–22h00</span></div>
-            <div><span>Samedi</span><span>13h00–22h00</span></div>
+            <div><span>Samedi</span><span>Fermé</span></div>
             <div><span>Dimanche</span><span>18h00–22h00</span></div>
 
         </div>
@@ -407,5 +408,21 @@
 
 </footer>
 
+<a href="#accueil" class="back-to-top" id="backToTop">
+    ↑
+</a>
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+
+});
+</script>
 </body>
 </html>
