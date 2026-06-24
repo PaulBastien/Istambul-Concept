@@ -1,334 +1,293 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Istambul Concept - Kebab & Grill</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istanbul Concept - Kebab & Grill à Lille</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <meta name="description" content="Istanbul Concept à Lille. Kebab, galettes, assiettes, burgers et livraison offerte dès 20€.">
 
-html{
-    scroll-behavior:smooth;
-}
+    <link rel="stylesheet" href="style.css">
 
-body{
-    color:#333;
-    line-height:1.6;
-}
-
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(0,0,0,0.85);
-    z-index:1000;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 8%;
-}
-
-.logo{
-    color:white;
-    font-size:1.8rem;
-    font-weight:bold;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#ffb300;
-}
-
-.hero{
-    height:100vh;
-    background:
-        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-        url('https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1600&q=80');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    padding:20px;
-}
-
-.hero-content h1{
-    font-size:4rem;
-    margin-bottom:15px;
-}
-
-.hero-content p{
-    font-size:1.3rem;
-    margin-bottom:25px;
-}
-
-.btn{
-    display:inline-block;
-    background:#ffb300;
-    color:#000;
-    padding:14px 28px;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#ffd54f;
-    transform:translateY(-2px);
-}
-
-section{
-    padding:80px 10%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2.3rem;
-    color:#222;
-}
-
-.menu-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.menu-item{
-    background:#f5f5f5;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    text-align:center;
-}
-
-.menu-item h3{
-    margin-bottom:10px;
-}
-
-.price{
-    color:#ff9800;
-    font-size:1.2rem;
-    font-weight:bold;
-}
-
-.info-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:#f8f8f8;
-    padding:30px;
-    border-radius:15px;
-}
-
-.card h3{
-    margin-bottom:15px;
-}
-
-.map-placeholder{
-    width:100%;
-    height:350px;
-    background:#ddd;
-    border-radius:15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#666;
-    font-size:1.2rem;
-}
-
-.reservation{
-    text-align:center;
-    background:#222;
-    color:white;
-}
-
-.reservation p{
-    margin:20px 0;
-}
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-}
-
-.socials{
-    margin-top:15px;
-}
-
-.socials a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    transition:0.3s;
-}
-
-.socials a:hover{
-    color:#ffb300;
-}
-
-@media (max-width:768px){
-
-    nav{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .hero-content h1{
-        font-size:2.8rem;
-    }
-
-    .hero-content p{
-        font-size:1rem;
-    }
-}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <div class="logo">Istambul Concept</div>
+<!-- HEADER -->
 
-        <ul>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#horaires">Horaires</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#localisation">Localisation</a></li>
-        </ul>
-    </nav>
+<header>
+
+    <div class="container navbar">
+
+        <a href="#" class="logo">
+
+            <img src="images/logo.png" alt="Logo Istanbul Concept">
+
+        </a>
+
+        <nav>
+
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#specialites">Spécialités</a></li>
+                <li><a href="#livraison">Livraison</a></li>
+                <li><a href="#horaires">Horaires</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Istambul Concept</h1>
-        <p>Kebabs, grillades et saveurs authentiques</p>
-        <a href="#reservation" class="btn">Réserver une table</a>
+<!-- HERO -->
+
+<section id="accueil" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="badge">
+                Depuis plusieurs années à Lille
+            </span>
+
+            <h1>
+                Le goût authentique du Kebab
+            </h1>
+
+            <p>
+
+                Sandwichs, galettes, assiettes, burgers,
+                desserts orientaux et bien plus encore.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="tel:0374447726" class="btn btn-red">
+                    📞 Appeler
+                </a>
+
+                <a
+                    href="https://deliveroo.fr/fr/menu/lille/lille-esquermes/istanbul-concept-kebab-25-rue-de-turenne/"
+                    target="_blank"
+                    class="btn btn-outline"
+                >
+                    🛵 Commander
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="images/assiette-brochette.png"
+                alt="Assiette Istanbul Concept"
+            >
+
+        </div>
+
     </div>
+
 </section>
 
-<section id="menu">
-    <h2 class="section-title">Notre Menu</h2>
+<!-- SPECIALITES -->
 
-    <div class="menu-grid">
+<section id="specialites">
 
-        <div class="menu-item">
-            <h3>Kebab Classique</h3>
-            <p>Viande kebab, salade, tomates, oignons.</p>
-            <div class="price">8,50€</div>
-        </div>
+    <div class="container">
 
-        <div class="menu-item">
-            <h3>Assiette Mixte</h3>
-            <p>Kebab, frites, crudités et sauces.</p>
-            <div class="price">13,90€</div>
-        </div>
+        <h2>
+            Nos spécialités
+        </h2>
 
-        <div class="menu-item">
-            <h3>Tacos Maison</h3>
-            <p>Viande au choix, fromage et frites.</p>
-            <div class="price">9,90€</div>
-        </div>
+        <div class="cards">
 
-        <div class="menu-item">
-            <h3>Menu Enfant</h3>
-            <p>Mini kebab, frites et boisson.</p>
-            <div class="price">6,90€</div>
+            <div class="card">
+                <h3>🌯 Kebabs</h3>
+                <p>Viande grillée et sauces savoureuses.</p>
+            </div>
+
+            <div class="card">
+                <h3>🥙 Galettes</h3>
+                <p>Préparées à la commande.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍽 Assiettes</h3>
+                <p>Des portions généreuses et gourmandes.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍔 Burgers</h3>
+                <p>Pour les amateurs de recettes gourmandes.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍰 Desserts</h3>
+                <p>Baklavas et spécialités orientales.</p>
+            </div>
+
+            <div class="card">
+                <h3>🥤 Boissons</h3>
+                <p>Boissons fraîches et accompagnements.</p>
+            </div>
+
         </div>
 
     </div>
+
 </section>
+
+<!-- LIVRAISON -->
+
+<section id="livraison" class="dark">
+
+    <div class="container">
+
+        <h2>
+            Livraison à domicile
+        </h2>
+
+        <p class="delivery-intro">
+
+            Livraison offerte à partir de <strong>20€</strong>
+
+        </p>
+
+        <div class="zones">
+
+            <span>Lille</span>
+            <span>Lambersart</span>
+            <span>Lomme</span>
+            <span>Bois-Blancs</span>
+            <span>Haubourdin</span>
+            <span>Loos</span>
+
+        </div>
+
+        <div class="delivery-box">
+
+            <h3>Commander par téléphone</h3>
+
+            <a href="tel:0374447726">
+                03 74 44 77 26
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HORAIRES -->
 
 <section id="horaires">
-    <h2 class="section-title">Horaires d'ouverture</h2>
 
-    <div class="card">
-        <p><strong>Lundi :</strong> 11h30 - 23h00</p>
-        <p><strong>Mardi :</strong> 11h30 - 23h00</p>
-        <p><strong>Mercredi :</strong> 11h30 - 23h00</p>
-        <p><strong>Jeudi :</strong> 11h30 - 23h00</p>
-        <p><strong>Vendredi :</strong> 11h30 - 00h00</p>
-        <p><strong>Samedi :</strong> 11h30 - 00h00</p>
-        <p><strong>Dimanche :</strong> 12h00 - 22h00</p>
-    </div>
-</section>
+    <div class="container">
 
-<section id="contact">
-    <h2 class="section-title">Contact</h2>
+        <h2>
+            Horaires d'ouverture
+        </h2>
 
-    <div class="info-grid">
+        <div class="hours">
 
-        <div class="card">
-            <h3>Coordonnées</h3>
-            <p>📞 03 20 XX XX XX</p>
-            <p>📧 contact@istambulconcept.fr</p>
-            <p>📍 Lille, France</p>
-        </div>
+            <div><span>Lundi</span><span>11h00–14h30 • 18h00–22h00</span></div>
+            <div><span>Mardi</span><span>11h00–14h30 • 18h00–22h00</span></div>
+            <div><span>Mercredi</span><span>11h00–14h30 • 18h00–22h00</span></div>
+            <div><span>Jeudi</span><span>11h00–14h30 • 18h00–22h00</span></div>
+            <div><span>Vendredi</span><span>11h00–14h30 • 18h00–22h00</span></div>
+            <div><span>Samedi</span><span>13h00–22h00</span></div>
+            <div><span>Dimanche</span><span>18h00–22h00</span></div>
 
-        <div class="card">
-            <h3>Informations</h3>
-            <p>Sur place, à emporter et livraison.</p>
-            <p>Réservation conseillée les week-ends.</p>
         </div>
 
     </div>
+
 </section>
 
-<section id="localisation">
-    <h2 class="section-title">Nous trouver</h2>
+<!-- CONTACT -->
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5070.576184291507!2d3.0381437716019533!3d50.62900082382374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d56fe12c143f%3A0x5f51286144f63c67!2sIstanbul%20Concept%20Kebab!5e0!3m2!1sfr!2sfr!4v1782257971690!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<section id="contact" class="dark">
+
+    <div class="container contact">
+
+        <div>
+
+            <h2>
+                Nous contacter
+            </h2>
+
+            <p>
+                📍 25 Rue de Turenne, 59000 Lille
+            </p>
+
+            <p>
+                📞 03 74 44 77 26
+            </p>
+
+            <p>
+                📸 Instagram :
+                @istanbul_concept_lille
+            </p>
+
+            <div class="contact-buttons">
+
+                <a href="tel:0374447726" class="btn btn-red">
+                    Appeler
+                </a>
+
+                <a
+                    href="https://www.instagram.com/istanbul_concept_lille"
+                    target="_blank"
+                    class="btn btn-outline"
+                >
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="map">
+
+            <iframe
+                src="https://www.google.com/maps?q=25+rue+de+turenne+lille&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="reservation" class="reservation">
-    <h2>Réservez votre table</h2>
-    <p>Contactez-nous dès maintenant pour réserver.</p>
-    <a href="tel:+33320000000" class="btn">Réserver</a>
-</section>
+<!-- FOOTER -->
 
 <footer>
-    <p>© 2026 Istambul Concept - Tous droits réservés</p>
 
-    <div class="socials">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">TikTok</a>
+    <div class="container">
+
+        <img
+            src="images/logo.png"
+            alt="Logo Istanbul Concept"
+            class="footer-logo"
+        >
+
+        <p>
+            © 2026 Istanbul Concept - Tous droits réservés
+        </p>
+
     </div>
+
 </footer>
 
 </body>
 </html>
+```
